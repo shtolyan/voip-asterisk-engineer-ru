@@ -1,34 +1,38 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Анатолий Шешенин — VoIP / Asterisk инженер. Linux-телефония, CRM-интеграции и надёжная мультитенантная инфраструктура." />
-    <title>Анатолий Шешенин — VoIP / Asterisk инженер</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=3" />
-  </head>
-  <body>
-    <header class="topbar">
-      <a class="name" href="#top">Анатолий Шешенин</a>
-      <span class="topbar-role">VoIP / Asterisk инженер</span>
-      <a class="topbar-link" href="mailto:natepo4ty@gmail.com">Связаться</a>
-    </header>
-    <main id="top">
-      <section class="hero wrap">
-        <div><p class="label">HANOI, VIETNAM · REMOTE</p><h1>Настраиваю телефонию,<br /><i>на которую можно опереться.</i></h1></div>
-        <div class="hero-note"><p>Инженер с 10+ годами опыта. Проектирую и поддерживаю Linux-телефонию на Asterisk, связываю звонки с CRM и убираю точки отказа.</p><a class="arrow-link" href="#experience">Посмотреть опыт <span>↘</span></a></div>
-      </section>
-      <section class="value wrap"><div class="section-label">Чем я полезен</div><div class="value-grid"><p class="value-lead">Берусь за систему целиком: от SIP-входа и маршрутизации до карточки клиента в CRM и понятной эксплуатации.</p><ul><li>Стабильная входящая телефония, переадресация и операторские сценарии.</li><li>Изоляция клиентов, защита от фрода и предсказуемая нагрузка.</li><li>Интеграции с CRM, автоматизация конфигурации и диагностика production.</li></ul></div></section>
-      <section class="experience wrap" id="experience"><div class="section-label">Опыт</div>
-        <div class="experience-main"><div class="experience-title"><h2>Airop</h2><p>Телефония и автоматизация для клиентов</p></div><div class="experience-copy"><p class="lead">Перевёл телефонию 15 клиентов с одного общего Asterisk на изолированную архитектуру: Kamailio на SIP edge, rtpengine для медиа и отдельный Asterisk в Docker для каждого клиента.</p><div class="results"><div><strong>15</strong><span>изолированных<br />клиентских контуров</span></div><div><strong>1</strong><span>публичный IP<br />и SIP-вход</span></div><div><strong>0</strong><span>публичных портов<br />у Asterisk</span></div></div><ul class="compact-list"><li>Сделал так, чтобы reload, ошибка в dialplan или падение одного клиента не затрагивали остальных.</li><li>Вынес маршрутизацию по домену и DID, антифрод и лимиты звонков на Kamailio.</li><li>Связал события звонка с CRM: кто звонит, какая карточка открывается и что произошло дальше.</li><li>Автоматизировал provisioning из PostgreSQL и поэтапные обновления Asterisk.</li></ul></div></div>
-        <div class="experience-main previous"><div class="experience-title"><h2>Garant Osago</h2><p>IT Lead / Software &amp; Infrastructure Engineer</p></div><div class="experience-copy"><p>Внедрил Asterisk на Linux-сервере с нуля: внутренние номера, входящая маршрутизация, переадресация и рабочие сценарии для сотрудников.</p></div></div>
-      </section>
-      <section class="toolbox wrap" id="stack"><div class="section-label">Стек</div><div class="toolbox-grid"><div><h3>Телефония</h3><p>Asterisk · PJSIP · SIP · Kamailio · rtpengine · RTP</p></div><div><h3>Инфраструктура</h3><p>Linux · Docker · cgroups · Git · CI/CD · мониторинг</p></div><div><h3>Интеграции</h3><p>C# / .NET · TypeScript · HTTP API · WebSocket · CRM</p></div><div><h3>Данные</h3><p>PostgreSQL · MariaDB / MySQL · Redis · SQL</p></div></div></section>
-      <section class="contact wrap" id="contact"><p class="section-label">Контакты</p><div class="contact-row"><h2>Есть задача<br /><i>по телефонии?</i></h2><div class="contact-links"><a class="primary-link" href="mailto:natepo4ty@gmail.com?subject=VoIP%20/%20Asterisk%20проект">natepo4ty@gmail.com <span>↗</span></a><a href="Anatoly_Sheshenin_VoIP_Asterisk_Engineer_EN.pdf" download>Скачать CV <span>↓</span></a><a href="https://shtolyan.github.io/portfolio/" target="_blank" rel="noreferrer">Портфолио <span>↗</span></a><a href="https://github.com/shtolyan" target="_blank" rel="noreferrer">GitHub <span>↗</span></a></div></div></section>
-    </main>
-    <footer class="footer wrap"><span>© 2026 Анатолий Шешенин</span><span>Hanoi, Vietnam · UTC+7</span></footer>
-  </body>
-</html>
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Анатолий Шешенин — резюме VoIP / Asterisk инженера</title>
+<meta name="description" content="Резюме Анатолия Шешенина: Asterisk, Linux, SIP/RTP, AMI, Kamailio, rtpengine. Опыт Airop и Гарант ОСАГО, телефония и CRM-интеграции.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=cv4">
+</head>
+<body>
+<div class="toolbar"><span>Резюме · Русская версия</span><a href="Anatoly_Sheshenin_VoIP_Asterisk_Engineer_EN.pdf">PDF на английском</a></div>
+<main class="resume">
+<header class="identity">
+<div><h1>Анатолий Шешенин</h1><p class="position">VoIP / Asterisk инженер</p><p class="location">Ханой, Вьетнам · UTC+7 · Удалённая работа</p></div>
+<address><a href="mailto:natepo4ty@gmail.com">natepo4ty@gmail.com</a><a href="tel:+84327480214">+84 327 480 214</a><div class="links"><a href="https://github.com/shtolyan">GitHub</a><a href="https://shtolyan.github.io/portfolio/">Портфолио</a><a href="https://linkedin.com/in/anatoly-sheshenin-b036ab66/">LinkedIn</a></div></address>
+</header>
+<section class="profile"><h2>Профессиональный профиль</h2><p>Инженер с более чем 10-летним опытом в разработке программного обеспечения и IT-инфраструктуре. Практический опыт внедрения Asterisk с нуля на Linux, настройки маршрутизации звонков, переадресации и интеграций с CRM. В Airop спроектировал миграцию телефонии 15 клиентов на изолированные экземпляры Asterisk с общим SIP-входом через Kamailio.</p><p>Работаю на стыке телефонии и прикладной разработки: от настройки SIP/RTP и серверной инфраструктуры до обработки событий звонка и отображения карточки клиента оператору.</p></section>
+<section id="experience"><h2>Релевантный опыт</h2>
+<article class="job"><header><h3>Airop</h3><p class="job-role">Разработка и внедрение телефонии, CRM-интеграции</p></header><p>Клиентские решения на Asterisk и собственная серверная инфраструктура Linux.</p>
+<h4>Миграция телефонии для 15 клиентов</h4>
+<ul>
+<li>Спроектировал и внедрил переход с общего Asterisk с разделением по контекстам на <strong>Kamailio + rtpengine + отдельный Asterisk в Docker для каждого клиента</strong>.</li>
+<li>Изолировал клиентские экземпляры: перезагрузка конфигурации, ошибка в диалплане или падение Asterisk у одного клиента больше не затрагивают остальные 14.</li>
+<li>Организовал единый вход через один публичный IP и SIP-порт. Вынес на Kamailio маршрутизацию по домену и DID, защиту от перебора паролей и фрода, ограничения одновременных звонков.</li>
+<li>Настроил обработку NAT и RTP через rtpengine. Закрыл публичный доступ к портам клиентских Asterisk; устранил одностороннюю слышимость и обрывы, связанные с прохождением медиа через Docker-сеть.</li>
+<li>Ввёл лимиты CPU и RAM через cgroups, чтобы ограничить влияние записи разговоров, транскодинга и IVR одного клиента на соседние экземпляры.</li>
+<li>Перевёл конфигурации на генерацию из единой базы PostgreSQL: подключение клиента через запись в базе и автоматический деплой. Организовал поэтапные обновления Asterisk на группах клиентов.</li>
+</ul>
+<h4>Интеграции и клиентские сценарии</h4><ul><li>Настраивал входящие звонки, доставку вызова оператору и переадресацию под процессы клиента.</li><li>Интегрировал телефонию с CRM: определение звонящего и открытие соответствующей карточки клиента при входящем вызове.</li><li>Работал с SIP/PJSIP, RTP и AMI при настройке телефонии и интеграций с прикладными системами.</li></ul>
+<p class="stack"><b>Технологии:</b> Asterisk, PJSIP, SIP, RTP, NAT, AMI, Kamailio, rtpengine, Docker, cgroups, PostgreSQL, Linux.</p></article>
+<article class="job"><header><h3>Гарант ОСАГО</h3><p class="job-role">Руководитель IT / внедрение телефонии и инфраструктуры</p></header><p>IT-инфраструктура и корпоративная телефония юридической компании.</p><ul><li>Внедрил Asterisk с нуля на собственном Linux-сервере: от установки и базовой конфигурации до рабочих сценариев входящих звонков.</li><li>Настроил внутренние номера, маршрутизацию вызовов к сотрудникам и переадресацию в соответствии с процессами компании.</li><li>Настраивал SIP/VoIP и RTP для установления вызова и передачи аудио; работал с сетевыми параметрами телефонии.</li><li>Использовал AMI при работе с Asterisk и интеграцией телефонии с информационными системами.</li></ul><p class="stack"><b>Технологии:</b> Asterisk, SIP/VoIP, RTP, AMI, Linux, серверная инфраструктура.</p></article>
+</section>
+<section><h2>Технические навыки</h2><dl class="skills"><div><dt>IP-телефония</dt><dd>Asterisk, PJSIP, SIP/VoIP, RTP, NAT, AMI, Kamailio, rtpengine; маршрутизация, переадресация, диалпланы, CRM-интеграции.</dd></div><div><dt>Серверы и эксплуатация</dt><dd>Linux, Docker, cgroups, Git; диагностика по логам, автоматизация конфигураций и развёртывания, поэтапные обновления.</dd></div><div><dt>Разработка интеграций</dt><dd>C# / .NET, TypeScript, HTTP API, WebSocket; обработка событий и обмен данными между системами.</dd></div><div><dt>Базы данных</dt><dd>SQL, PostgreSQL; хранение конфигураций и данных для бизнес-приложений.</dd></div></dl></section>
+<section class="education"><h2>Образование и языки</h2><h3>СПбГУТ им. проф. М. А. Бонч-Бруевича</h3><p>Программное обеспечение и автоматизированные системы · 2004–2009</p><p><b>Русский</b> — родной · <b>Английский</b> — B2</p></section>
+<footer><span>Анатолий Шешенин · VoIP / Asterisk инженер</span><a href="mailto:natepo4ty@gmail.com">natepo4ty@gmail.com</a></footer>
+</main>
+</body></html>
