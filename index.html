@@ -3,118 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Анатолий Шешенин — VoIP / Asterisk инженер. Изолированная мультитенантная телефония, Linux, Kamailio, rtpengine и CRM-интеграции." />
-    <meta name="theme-color" content="#07111f" />
+    <meta name="description" content="Анатолий Шешенин — VoIP / Asterisk инженер. Linux-телефония, CRM-интеграции и надёжная мультитенантная инфраструктура." />
     <title>Анатолий Шешенин — VoIP / Asterisk инженер</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="На главную">
-        <span class="brand-mark" aria-hidden="true">AS</span>
-        <span>Анатолий Шешенин</span>
-      </a>
-      <nav class="nav" aria-label="Основная навигация">
-        <a href="#case">Кейс</a>
-        <a href="#stack">Стек</a>
-        <a href="#contact">Контакты</a>
-      </nav>
-      <a class="nav-cta" href="mailto:natepo4ty@gmail.com?subject=VoIP%20/%20Asterisk%20проект">Обсудить проект</a>
+    <header class="topbar">
+      <a class="name" href="#top">Анатолий Шешенин</a>
+      <span class="topbar-role">VoIP / Asterisk инженер</span>
+      <a class="topbar-link" href="mailto:natepo4ty@gmail.com">Связаться</a>
     </header>
-
     <main id="top">
-      <section class="hero section-wrap">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> доступен для remote-проектов</p>
-          <h1>Телефония,<br /><em>которая держит удар.</em></h1>
-          <p class="hero-lead">VoIP / Asterisk инженер. Проектирую Linux-телефонию для клиентов, которым важны изоляция, качество звука и понятная связь с CRM.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#case">Смотреть кейс</a>
-            <a class="button button-quiet" href="mailto:natepo4ty@gmail.com">natepo4ty@gmail.com <span aria-hidden="true">↗</span></a>
-          </div>
-          <dl class="hero-facts">
-            <div><dt>15</dt><dd>клиентов<br />в миграции</dd></div>
-            <div><dt>0</dt><dd>публичных портов<br />у Asterisk</dd></div>
-            <div><dt>10+</dt><dd>лет в<br />инженерии</dd></div>
-          </dl>
-        </div>
-        <div class="network-visual" aria-label="Схема изолированной телефонии">
-          <div class="visual-caption">production topology <span>01</span></div>
-          <div class="network-grid"></div>
-          <div class="signal-line signal-a"></div>
-          <div class="signal-line signal-b"></div>
-          <div class="signal-line signal-c"></div>
-          <div class="node node-edge"><span class="node-kicker">SIP EDGE</span><strong>Kamailio</strong><small>domain · DID · limits</small></div>
-          <div class="node node-media"><span class="node-kicker">MEDIA</span><strong>rtpengine</strong><small>NAT · RTP · secure</small></div>
-          <div class="tenant-cluster" aria-hidden="true">
-            <span class="cluster-label">isolated tenants</span>
-            <span class="tenant tenant-1">A1</span><span class="tenant tenant-2">A2</span><span class="tenant tenant-3">A3</span><span class="tenant tenant-4">A4</span><span class="tenant tenant-more">+11</span>
-          </div>
-          <div class="visual-note">один вход<br /><b>15 независимых контуров</b></div>
-        </div>
+      <section class="hero wrap">
+        <div><p class="label">HANOI, VIETNAM · REMOTE</p><h1>Настраиваю телефонию,<br /><i>на которую можно опереться.</i></h1></div>
+        <div class="hero-note"><p>Инженер с 10+ годами опыта. Проектирую и поддерживаю Linux-телефонию на Asterisk, связываю звонки с CRM и убираю точки отказа.</p><a class="arrow-link" href="#experience">Посмотреть опыт <span>↘</span></a></div>
       </section>
-
-      <section class="intro-band section-wrap">
-        <p>Моя работа — сделать так, чтобы звонок дошёл до нужного оператора, а сбой у одного клиента остался только его проблемой.</p>
-        <span class="band-index">VOIP / LINUX / CRM</span>
+      <section class="value wrap"><div class="section-label">Чем я полезен</div><div class="value-grid"><p class="value-lead">Берусь за систему целиком: от SIP-входа и маршрутизации до карточки клиента в CRM и понятной эксплуатации.</p><ul><li>Стабильная входящая телефония, переадресация и операторские сценарии.</li><li>Изоляция клиентов, защита от фрода и предсказуемая нагрузка.</li><li>Интеграции с CRM, автоматизация конфигурации и диагностика production.</li></ul></div></section>
+      <section class="experience wrap" id="experience"><div class="section-label">Опыт</div>
+        <div class="experience-main"><div class="experience-title"><h2>Airop</h2><p>Телефония и автоматизация для клиентов</p></div><div class="experience-copy"><p class="lead">Перевёл телефонию 15 клиентов с одного общего Asterisk на изолированную архитектуру: Kamailio на SIP edge, rtpengine для медиа и отдельный Asterisk в Docker для каждого клиента.</p><div class="results"><div><strong>15</strong><span>изолированных<br />клиентских контуров</span></div><div><strong>1</strong><span>публичный IP<br />и SIP-вход</span></div><div><strong>0</strong><span>публичных портов<br />у Asterisk</span></div></div><ul class="compact-list"><li>Сделал так, чтобы reload, ошибка в dialplan или падение одного клиента не затрагивали остальных.</li><li>Вынес маршрутизацию по домену и DID, антифрод и лимиты звонков на Kamailio.</li><li>Связал события звонка с CRM: кто звонит, какая карточка открывается и что произошло дальше.</li><li>Автоматизировал provisioning из PostgreSQL и поэтапные обновления Asterisk.</li></ul></div></div>
+        <div class="experience-main previous"><div class="experience-title"><h2>Юридическая компания</h2><p>Внедрение телефонии с нуля</p></div><div class="experience-copy"><p>Поднял Asterisk на Linux-сервере, настроил внутренние номера, входящую маршрутизацию, переадресацию и рабочие сценарии для сотрудников.</p></div></div>
       </section>
-
-      <section class="case-study section-wrap" id="case">
-        <div class="section-heading">
-          <p class="eyebrow">Главный кейс</p>
-          <h2>Общий Asterisk<br /><span>стал 15 системами.</span></h2>
-        </div>
-        <div class="case-layout">
-          <div class="case-story">
-            <p class="lead-paragraph">В Airop я перевёл телефонию 15 клиентов с общего Asterisk на изолированную архитектуру. Теперь каждый клиент получает свой контур, свои лимиты и свои обновления — без общей точки отказа.</p>
-            <div class="quote-line"><span>«</span><p>Reload одного dialplan больше не останавливает бизнес остальных.</p></div>
-          </div>
-          <div class="case-details">
-            <article><span class="detail-num">01</span><h3>Edge-маршрутизация</h3><p>Kamailio принимает один публичный SIP-вход, маршрутизирует по домену и DID, защищает от перебора и фрода.</p></article>
-            <article><span class="detail-num">02</span><h3>Чистый RTP через NAT</h3><p>rtpengine вынес медиа из Docker-сети. У Asterisk нет публичных портов, исчезли one-way audio и обрывы.</p></article>
-            <article><span class="detail-num">03</span><h3>Ресурсы по границам</h3><p>cgroups ограничивают CPU и RAM каждого клиента. Запись, транскодинг и IVR не съедают соседей.</p></article>
-            <article><span class="detail-num">04</span><h3>Одна запись — новый клиент</h3><p>Конфигурация генерируется из PostgreSQL, а обновления Asterisk выкатываются поэтапно.</p></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="stack-section section-wrap" id="stack">
-        <div class="section-heading compact"><p class="eyebrow">Инструменты</p><h2>Собираю систему<br /><span>от SIP до CRM.</span></h2></div>
-        <div class="stack-list">
-          <div class="stack-row"><span class="stack-label">Телефония</span><span>Asterisk · PJSIP · SIP · Kamailio · rtpengine · RTP</span></div>
-          <div class="stack-row"><span class="stack-label">Инфраструктура</span><span>Linux · Docker · cgroups · Git · CI/CD · мониторинг</span></div>
-          <div class="stack-row"><span class="stack-label">Интеграции</span><span>C# / .NET · TypeScript · HTTP API · WebSocket · CRM</span></div>
-          <div class="stack-row"><span class="stack-label">Данные</span><span>PostgreSQL · MariaDB / MySQL · Redis · SQL</span></div>
-        </div>
-      </section>
-
-      <section class="experience section-wrap">
-        <div class="section-heading compact"><p class="eyebrow">Как работаю</p><h2>Инженерный подход<br /><span>без магии.</span></h2></div>
-        <div class="principles">
-          <div><span>01</span><h3>Сначала контур</h3><p>Разделяю ответственность и точки отказа до того, как открывается первый порт.</p></div>
-          <div><span>02</span><h3>Потом сигнал</h3><p>Проверяю SIP, RTP, NAT и логи на реальном сценарии, а не только в конфиге.</p></div>
-          <div><span>03</span><h3>И только затем scale</h3><p>Автоматизирую provisioning, лимиты и обновления, чтобы рост клиентов не рос вместе с ручной работой.</p></div>
-        </div>
-      </section>
-
-      <section class="contact section-wrap" id="contact">
-        <div>
-          <p class="eyebrow">Есть задача?</p>
-          <h2>Давайте настроим<br /><em>связь правильно.</em></h2>
-        </div>
-        <div class="contact-actions">
-          <a class="button button-primary" href="mailto:natepo4ty@gmail.com?subject=VoIP%20/%20Asterisk%20проект">Написать на почту <span aria-hidden="true">↗</span></a>
-          <a class="text-link" href="Anatoly_Sheshenin_VoIP_Asterisk_Engineer_EN.pdf" download>Скачать CV <span aria-hidden="true">↓</span></a>
-          <a class="text-link" href="https://shtolyan.github.io/portfolio/" target="_blank" rel="noreferrer">Портфолио <span aria-hidden="true">↗</span></a>
-          <a class="text-link" href="https://github.com/shtolyan" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-        </div>
-      </section>
+      <section class="toolbox wrap" id="stack"><div class="section-label">Стек</div><div class="toolbox-grid"><div><h3>Телефония</h3><p>Asterisk · PJSIP · SIP · Kamailio · rtpengine · RTP</p></div><div><h3>Инфраструктура</h3><p>Linux · Docker · cgroups · Git · CI/CD · мониторинг</p></div><div><h3>Интеграции</h3><p>C# / .NET · TypeScript · HTTP API · WebSocket · CRM</p></div><div><h3>Данные</h3><p>PostgreSQL · MariaDB / MySQL · Redis · SQL</p></div></div></section>
+      <section class="contact wrap" id="contact"><p class="section-label">Контакты</p><div class="contact-row"><h2>Есть задача<br /><i>по телефонии?</i></h2><div class="contact-links"><a class="primary-link" href="mailto:natepo4ty@gmail.com?subject=VoIP%20/%20Asterisk%20проект">natepo4ty@gmail.com <span>↗</span></a><a href="Anatoly_Sheshenin_VoIP_Asterisk_Engineer_EN.pdf" download>Скачать CV <span>↓</span></a><a href="https://shtolyan.github.io/portfolio/" target="_blank" rel="noreferrer">Портфолио <span>↗</span></a><a href="https://github.com/shtolyan" target="_blank" rel="noreferrer">GitHub <span>↗</span></a></div></div></section>
     </main>
-
-    <footer class="footer section-wrap"><span>© 2026 Анатолий Шешенин</span><span>Hanoi, Vietnam · UTC+7</span><span>VoIP / Asterisk Engineer</span></footer>
-    <script src="script.js"></script>
+    <footer class="footer wrap"><span>© 2026 Анатолий Шешенин</span><span>Hanoi, Vietnam · UTC+7</span></footer>
   </body>
 </html>
